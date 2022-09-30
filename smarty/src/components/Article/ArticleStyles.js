@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../../globalStyles';
 
-export const [FTName] = styled.section`
+export const Article = styled.section`
   height: 100vh;
   background-position: center;
   background-size: cover;
