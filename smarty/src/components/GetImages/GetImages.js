@@ -1,15 +1,20 @@
-import React, { useEffect, useState } from "react"
-import Article from "../Article/Article"
+import { useState, useEffect } from "react"
+import Article from "./Article"
+// import { Link } from "react-router-dom"
 
+export default function GetImages() {
   const [images, setImages] = useState([])
 
   useEffect(() => {
     const fetchImages = async () => {
-      const response = await fetch("http://localhost:8000/")
+      const response = await fetch(
+        `https://api.unsplash.com/photos?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
+      )
       const data = await response.json()
       console.log(data)
       setImages(data)
     }
+
     fetchImages()
   }, [])
 
