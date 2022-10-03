@@ -13,8 +13,8 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/Home' element={<Home />}></Route>
-          <Route path='/' element={<Fireship />}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/FS' element={<Fireship />}></Route>
           <Route path='/Options' element={<Options />}></Route>
           <Route path='/Grid' element={<Grid />}></Route>
         </Routes>
